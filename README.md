@@ -1,2 +1,1 @@
-Este es el readme del proyecto
-Prueba1
+Librerias para implementar comunicacion de módulos Xbee S2 & S2 PRO en GNU Radio.
