@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<block>
+  <name>Tx App: Xbee</name>
+  <key>WSN_tx_app_xbee</key>
+  <category>WSN</category>
+  <import>import WSN</import>
+  <make>WSN.tx_app_xbee()</make>
+
+  <sink>
+    <name>in</name>
+    <type>message</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>message</type>
+  </source>
+  <doc>
+    Descripción:
+    Adiciona capa de aplicación utiliziada en xbee s2
+    in: [pmt symbol] desde "Message Debug"
+    out: [pmt pair] a "Tx NWK"
+    Parámetros: Ninguno
+  </doc>
+</block>

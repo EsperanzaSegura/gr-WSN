@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<block>
+  <name>Tx Nwk: Zigbee</name>
+  <key>WSN_tx_nwk_zigbee</key>
+  <category>WSN</category>
+  <import>import WSN</import>
+  <make>WSN.tx_nwk_zigbee($SrcAddN, $SrcIeeeN)</make>
+
+  <param>
+    <name>Source Add 16bit</name>
+    <key>SrcAddN</key>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Source Add IEEE 64bit</name>
+    <key>SrcIeeeN</key>
+    <type>raw</type>
+  </param>
+
+
+  <sink>
+    <name>in</name>
+    <type>message</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>message</type>
+  </source>
+  <doc>
+    Descripción:
+    Adiciona capa de Red especificada en el estandar
+    Zigbee 2006. Transmisión tipo Broadcast
+    
+    in: [pmt pair] desde "Tx App"
+    out: [pmt pair] a "Tx Mac"
+    Parámetros: 
+    	SrcAddN: [list N=2] LSB primero ej.[0x2B,0x1A]
+    	SrcIeeeN: [list N=8] LSB primero ej.[0x12,0xAF,0x93,0x40,0x00,0xA2,0x13,0x00]
+  </doc>
+
+</block>

@@ -1,0 +1,5 @@
+Ejecutar en primer lugar los flujogramas Rx_Phy_OQPSK.grc y Tx_Phy_OQPSK
+Luego ejecutar el flujograma dependiento de la funcionalidad Tx / Rx / Tx & Rx
+
+En /apps se encuentra el script para graficar la temperatura de los módulos Xbee para ejecutar
+$ python xbee_gui_temp.py

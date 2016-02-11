@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<block>
+  <name>rx_nwk_zigbee</name>
+  <key>WSN_rx_nwk_zigbee</key>
+  <category>WSN</category>
+  <import>import WSN</import>
+  <make>WSN.rx_nwk_zigbee()</make>
+
+  <sink>
+    <name>in</name>
+    <type>message</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>message</type>
+  </source>
+  <doc>
+    Descripción:
+    Desempaqueta la capa de Red especificada en el estandar
+    Zigbee 2006. 
+    
+    in: [pmt pair] desde "Rx Mac"
+    out: [pmt pair] a "Rx App"
+    Parámetros: Ninguno
+  </doc>
+</block>

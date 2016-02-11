@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<block>
+  <name>Rx Mac: 802.15.4</name>
+  <key>WSN_rx_mac_802_15_4</key>
+  <category>WSN</category>
+  <import>import WSN</import>
+  <make>WSN.rx_mac_802_15_4()</make>
+  
+  <sink>
+    <name>in</name>
+    <type>message</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>message</type>
+  </source>
+  <doc>
+    Descripción:
+    Des empaqueta la capa de Enlace especificada en el estandar
+    IEEE 802.15.4 2006. Revisa FCS y calcula LQI
+    
+    in: [pmt pair] desde "Rx Phy"
+    out: [pmt pair] a "Rx Nwk"
+    Parámetros: Ninguno
+  </doc>
+</block>

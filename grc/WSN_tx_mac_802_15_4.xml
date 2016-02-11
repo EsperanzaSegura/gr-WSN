@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<block>
+  <name>Tx Mac: 802.15.4</name>
+  <key>WSN_tx_mac_802_15_4</key>
+  <category>WSN</category>
+  <import>import WSN</import>
+  <make>WSN.tx_mac_802_15_4($PanId, $SrcAddM)</make>
+  <callback>set_PanId($PanId)</callback>
+  <param>
+    <name>PanId</name>
+    <key>PanId</key>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Source Add 16bit</name>
+    <key>SrcAddM</key>
+    <type>raw</type>
+  </param>
+  
+  <sink>
+    <name>in</name>
+    <type>message</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>message</type>
+  </source>
+  <doc>
+    Descripción:
+    Adiciona capa de Enlace especificada en el estandar
+    IEEE 802.15.4 2006. Calcula FCS
+    
+    in: [pmt pair] desde "Tx Nwk"
+    out: [pmt pair] a "Tx Phy"
+    Parámetros: 
+    	PanId: [list N=2] LSB primero ej.[0xCD,0xAB]
+    	SrcAddN: [list N=2] LSB primero ej.[0x2B,0x1A]
+  </doc>
+</block>
