@@ -4,7 +4,7 @@ El trabajo se basa en la libreria _gr-ieee802-15-4_ administrada por Bastian Blo
 Las librerias implementan bloques independientes para Tx y para RX para capa PHY O-QPSK, MAC, Network, Application, definidas en el estandar 802.15.4 y ZigBee2006.
 
 Antes de utilizar, se debe instalar las librerias _gr-ieee802-15-4_ y _gr-foo_ que se encuentran respectivamente en:
-https://github.com/bastibl/gr-ieee802-15-4
+https://github.com/bastibl/gr-ieee802-15-4 y
 https://github.com/bastibl/gr-foo
 
 ==== Instalación ====
